@@ -26,7 +26,7 @@ cat 'AIMD_preplist.txt' | while read condition_number ; do
 
 
         mkdir './AIMS/'"$condition_number"'/AIMD/'"$traj_num"
-        cp "./AIMD_prep/tc.in" './AIMS/'"$condition_number"'/AIMD/'"$traj_num"
+        cp "./AIMD_prep/md.in" './AIMS/'"$condition_number"'/AIMD/'"$traj_num"
         cp "./AIMD_prep/submit.sh" './AIMS/'"$condition_number"'/AIMD/'"$traj_num"
 
         ref_geomdat='./AIMS/'"$condition_number"'/Geometry.dat'
@@ -82,6 +82,12 @@ cat 'AIMD_preplist.txt' | while read condition_number ; do
             elif [[ $atom_type == 'O' ]]
                 then 
                 mass=29166.19140620
+	    elif [[ $atom_type == 'N' ]]
+	    	then
+		mass=25526.04296875
+            elif [[ $atom_type == 'Cl' ]]
+	    	then
+	    	mass=64507.6875		
             else 
                 echo "mass not defined, exiting program" 
 		        exit 

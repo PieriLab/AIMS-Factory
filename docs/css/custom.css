@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Avenir:wght@400;600&display=swap');
+
+/* Set global font */
+body {
+  font-family: 'Avenir', sans-serif;
+}
+
+/* Header + footer color */
+.md-header, .md-footer {
+  background-color: #6a1b9a; /* deep purple */
+  color: white;
+}
+
+/* Link styling */
+a {
+  color: #7e57c2;
+}
+
+a:hover {
+  color: #ba68c8;
+}
+
+/* Adjust code font slightly */
+code, pre {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95em;
+}
+
+/* Optional: soften cards and panels */
+.md-typeset .admonition {
+  border-left: 0.3rem solid #7e57c2;
+}
+

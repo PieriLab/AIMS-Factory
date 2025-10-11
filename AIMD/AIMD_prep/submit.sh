@@ -10,7 +10,7 @@
 #SBATCH --gres=gpu:1
 
 #Load necessary modules
-
 module load tc/25.03
 
-terachem tc.in > tc.out
+#Change to either md.in/md.out or opt.in/opt.out
+terachem opt.in > opt.out

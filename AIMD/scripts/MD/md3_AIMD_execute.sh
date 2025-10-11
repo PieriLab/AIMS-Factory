@@ -27,7 +27,7 @@ cat 'AIMD_preplist.txt' | while read condition_number ; do
 
         mkdir './AIMS/'"$condition_number"'/AIMD/'"$traj_num"
         cp "./AIMD_prep/md.in" './AIMS/'"$condition_number"'/AIMD/'"$traj_num"
-        cp "./AIMD_prep/submit.sh" './AIMS/'"$condition_number"'/AIMD/'"$traj_num"
+        cp "./AIMD_prep/submit_md.sh" './AIMS/'"$condition_number"'/AIMD/'"$traj_num"
 
         ref_geomdat='./AIMS/'"$condition_number"'/Geometry.dat'
         AIMD_coords='./AIMS/'"$condition_number"'/AIMD/'"$traj_num"'/coords.xyz' 
@@ -116,7 +116,7 @@ cat 'AIMD_preplist.txt' | while read condition_number ; do
 
 
         cd './AIMS/'"$condition_number"'/AIMD/'"$traj_num" 
-        sbatch submit.sh 
+        sbatch submit_md.sh 
         cd ../
         cd ../
         cd ../

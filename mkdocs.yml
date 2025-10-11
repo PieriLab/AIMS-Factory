@@ -1,72 +1,38 @@
-# =====================================================
-# AIMS Factory Documentation
-# =====================================================
 site_name: AIMS Factory
 site_url: https://pierilab.github.io/AIMS-Factory/
 repo_url: https://github.com/PieriLab/AIMS-Factory
 repo_name: PieriLab/AIMS-Factory
-site_description: Documentation for AIMS Factory workflows (AIMD + OPT)
-site_author: Madeline Lee Thomas
 
-# =====================================================
-# Theme Configuration
-# =====================================================
 theme:
   name: material
-  language: en
   palette:
     - scheme: default
       primary: purple
       accent: deep purple
-  font:
-    text: Avenir
-    code: Fira Code
   features:
     - navigation.sections
     - navigation.instant
     - navigation.top
-    - search.suggest
     - search.highlight
     - content.code.copy
-    - content.code.annotate
 
-extra_css:
-  - css/custom.css
-
-# =====================================================
-# Navigation
-# =====================================================
 nav:
   - Home: index.md
   - Workflows:
       - AIMD:
           - Overview: workflows/aimd/overview.md
           - Molecular Dynamics (MD): workflows/aimd/md.md
-          - Optimization (OPT): workflows/aimd/opt.md
+          - Optimization (Opt): workflows/aimd/opt.md
 
-# =====================================================
-# Markdown Extensions
-# =====================================================
 markdown_extensions:
   - admonition
   - toc:
       permalink: true
+  - tables
   - codehilite
   - footnotes
   - meta
-  - tables
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_png
-  - pymdownx.tabbed:
-      alternate_style: true
 
-# =====================================================
-# Plugins
-# =====================================================
 plugins:
   - search
 

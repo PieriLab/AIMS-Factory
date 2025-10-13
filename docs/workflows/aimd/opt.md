@@ -10,25 +10,20 @@
 
 ### 1. Directory Preparation
 
-1. Navigate to your molecule’s working directory:
+1. Navigate to your molecule’s working directory and ensure the following structure exists:
 
-   ```bash
-   .../<molecule>/AIMD/
-   ```
-2. Inside, ensure the following structure exists:
-
-   ```bash
-   AIMD/
-   ├── AIMS/               # contains AIMD results (0000/, 0001/, ...)
-   ├── AIMD_prep/          # holds shared input templates
-   ├── opt1_gen_list.sh    # generate geometry list for optimization
-   ├── opt2_execute.sh     # submit optimization jobs
-   ├── s_opt_spawn_check.sh # monitor optimization and restart progress
-   ├── s_summarize_OPT.sh  # summarize optimization job status
-   ├── r_create_restart_opt.sh # create restart directories (r1/, r2/, ...)
-   ├── r_run_restart_opt.sh    # submit all pending restart jobs
-   ```
-
+```bash
+.../<molecule>/AIMD/
+AIMD/
+├── AIMS/                     # contains AIMD results (0000/, 0001/, ...)
+├── AIMD_prep/                # holds shared input templates
+│   ├── opt1_gen_list.sh      # generate geometry list for optimization
+│   ├── opt2_execute.sh       # submit optimization jobs
+│   ├── s_opt_spawn_check.sh  # monitor optimization and restart progress
+│   ├── s_summarize_OPT.sh    # summarize optimization job status
+│   ├── r_create_restart_opt.sh   # create restart directories (r1/, r2/, ...)
+│   └── r_run_restart_opt.sh      # submit all pending restart jobs
+```
 ---
 
 ### 2. AIMD_prep Setup

@@ -2,7 +2,17 @@
 
 **AIMS-Factory** is a collection of automated workflows designed to streamline **Ab Initio Multiple Spawning (AIMS)** simulations and their post-processing extensions.  
 These workflows provide tools for trajectory continuation, analysis, and optimization within a reproducible, modular framework.
-
+<pre style="text-align:center; font-size: 0.9em; line-height: 1.1;">
+  ⠀⠀⠀⠀⠀⠀⠀  ⠀⣀⠀⡀    ⠀⡠⢂⠬⠀⠚⠁
+⠀⠀⠀⠀⠀⠀⠀⡠⢂⠬⠀⠚⠁     ⡠⡠
+⠀ __⠀⠀⠀⡠⡠⠀ ⠀⠀⠀   ||   ___                        
+ |""|  ||     _   /\  |"""|  __                  
+ |""| |"""|  |"| |""| |"""| |""|       
+ |""| |"""|  |"| |""| |"""| |""|      
+ |""| |"""|  |"| |""| |"""| |""|      
+ "'''"''"'""'"""''"''''"""'""'""
+    WELCOME TO AIMS-FACTORY
+</pre>
 ---
 
 ## Available Workflows

@@ -17,7 +17,7 @@ for run_dir in "$BASE"/*; do
     [[ "$spawn" =~ ^[0-9]+$ ]] || continue
 
     ((total++))
-    tc="$spawn_dir/tc.out"
+    tc="$spawn_dir/md.out"
     if [[ -f "$tc" ]]; then
       if tail -n 200 "$tc" | grep -q "| Job finished:" &&
          tail -n 200 "$tc" | grep -q "| Total processing time:"; then

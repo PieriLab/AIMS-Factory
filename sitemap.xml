@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://pierilab.github.io/AIMS-Factory/</loc>
+         <lastmod>2025-11-24</lastmod>
+    </url>
+    <url>
+         <loc>https://pierilab.github.io/AIMS-Factory/workflows/aimd/md/</loc>
+         <lastmod>2025-11-24</lastmod>
+    </url>
+    <url>
+         <loc>https://pierilab.github.io/AIMS-Factory/workflows/aimd/md_old/</loc>
+         <lastmod>2025-11-24</lastmod>
+    </url>
+    <url>
+         <loc>https://pierilab.github.io/AIMS-Factory/workflows/aimd/opt/</loc>
+         <lastmod>2025-11-24</lastmod>
+    </url>
+    <url>
+         <loc>https://pierilab.github.io/AIMS-Factory/workflows/aimd/overview/</loc>
+         <lastmod>2025-11-24</lastmod>
+    </url>
+</urlset>

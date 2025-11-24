@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+?#!/usr/bin/env bash
 set -euo pipefail
 
 LOG_FILE="info_create_restart_md.txt"
@@ -155,7 +155,7 @@ for tcpath in "${ERR_PATHS[@]}"; do
     echo "  ERROR: failed to write $next_rdir/vels.xyz"
   fi
 
-  for f in submit.sh md.in; do
+  for f in submit_md.sh md.in; do
     if [[ -f "$AIMD_DIR/$f" ]]; then
       cp -f "$AIMD_DIR/$f" "$next_rdir/"
     else

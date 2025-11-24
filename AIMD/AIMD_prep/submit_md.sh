@@ -13,4 +13,4 @@
 module load tc/25.03
 
 #Change to either md.in/md.out or opt.in/opt.out
-terachem opt.in > opt.out
+terachem md.in > md.out

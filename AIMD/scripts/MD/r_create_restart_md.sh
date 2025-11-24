@@ -85,7 +85,7 @@ extract_last_block() {
 # ----------------------------------------------------------------------
 for tcpath in "${ERR_PATHS[@]}"; do
   if [[ ! -f "$tcpath" ]]; then
-    echo "[WARN] tc.out not found (skipping): $tcpath"
+    echo "[WARN] md.out not found (skipping): $tcpath"
     continue
   fi
 
@@ -155,7 +155,7 @@ for tcpath in "${ERR_PATHS[@]}"; do
     echo "  ERROR: failed to write $next_rdir/vels.xyz"
   fi
 
-  for f in submit.sh tc.in; do
+  for f in submit.sh md.in; do
     if [[ -f "$AIMD_DIR/$f" ]]; then
       cp -f "$AIMD_DIR/$f" "$next_rdir/"
     else

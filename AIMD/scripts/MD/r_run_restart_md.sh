@@ -3,13 +3,13 @@ set -euo pipefail
 
 BASE="/work/users/m/a/mads2/CLARE/cis_AIMD_50"
 
-echo "[INFO] Searching for r# directories with tc.in but no tc.out under: $BASE"
+echo "[INFO] Searching for r# directories with md.in but no md.out under: $BASE"
 
 # Find restart directories r1, r2, r3, ...
 mapfile -t PENDING_DIRS < <(
   find "$BASE" -type d -regex ".*/r[0-9]+" | sort |
   while read -r d; do
-    if [[ -f "$d/tc.in" && ! -f "$d/tc.out" ]]; then
+    if [[ -f "$d/md.in" && ! -f "$d/md.out" ]]; then
       # Only keep dirs where coords.xyz and vels.xyz exist and are non-empty
       if [[ -s "$d/coords.xyz" && -s "$d/vels.xyz" ]]; then
         echo "$d"

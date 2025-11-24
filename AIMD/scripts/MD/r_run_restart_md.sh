@@ -35,11 +35,11 @@ fi
 
 # Submit jobs
 for d in "${PENDING_DIRS[@]}"; do
-  if [[ -f "$d/submit.sh" ]]; then
+  if [[ -f "$d/submit_md.sh" ]]; then
     echo "[INFO] Submitting job in $d"
-    (cd "$d" && sbatch submit.sh)
+    (cd "$d" && sbatch submit_md.sh)
   else
-    echo "[WARN] No submit.sh in $d — skipping."
+    echo "[WARN] No submit_md.sh in $d — skipping."
   fi
 done
 
